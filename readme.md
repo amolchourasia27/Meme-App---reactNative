@@ -23,7 +23,7 @@
 
 ### Download apk
 
-[APK Download](android\app\build\outputs\apk\debug\app-debug.apk)
+[APK Download](apks\MemeAppV1(B).apk)
 
 ### Upcoming Features
 
