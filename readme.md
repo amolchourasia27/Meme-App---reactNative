@@ -21,9 +21,9 @@
 - clone the repo
 - Start terminal and write command `react-native run-android` and run app on your plugged phone/Android Emulator
 
-<!-- ### Download apk
+### Download apk
 
-[APK Download](https://drive.google.com/file/d/111ZRxocVd1Bm2pRbjBlHjFJ_Fb-3hQMf/view?usp=sharing) **Google drive link** -->
+[APK Download](https://drive.google.com/file/d/1OuEOJ99x6C9gqaf6tTowS695WWIvlCZL/view?usp=sharing) **Google drive link**
 
 ### Upcoming Features
 
