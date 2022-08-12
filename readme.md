@@ -24,7 +24,7 @@
 #### Screenshots
 
 <Span>
-<img align="left" alt="screenshot" width="200" src=''>
+<img align="left" alt="screenshot" width="200" src='https://raw.githubusercontent.com/amolchourasia27/Meme-App---reactNative/main/readmeImageAssets/ScreeShot1.jpg'>
 
-<img align="right" alt="screenshot" width="200" src=''>
+<img align="right" alt="screenshot" width="200" src='https://raw.githubusercontent.com/amolchourasia27/Meme-App---reactNative/main/readmeImageAssets/ScreeShot2.jpg'>
 </Spam>
