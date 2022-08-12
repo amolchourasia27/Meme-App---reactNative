@@ -23,7 +23,7 @@
 
 ### Download apk
 
-[APK Download](https://github.com/amolchourasia27/Meme-App---reactNative/raw/main/apks/MemeAppV1(B).apk)
+[APK Download](https://drive.google.com/file/d/111ZRxocVd1Bm2pRbjBlHjFJ_Fb-3hQMf/view?usp=sharing) **Google drive link**
 
 ### Upcoming Features
 
