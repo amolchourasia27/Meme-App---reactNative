@@ -19,7 +19,21 @@
 
 - Install React Native
 - clone the repo
-- Start terminal and write command react-native run-android and run app on your plugged phone/Android Emulator
+- Start terminal and write command `react-native run-android` and run app on your plugged phone/Android Emulator
+
+### Download apk
+
+[APK Download](android\app\build\outputs\apk\debug\app-debug.apk)
+
+### Upcoming Features
+
+- User can rate a meme out of 5 ⭐
+
+- Users can request multiple memes
+
+- Users can find a meme using a unique id.
+
+- Download a meme
 
 #### Screenshots
 
