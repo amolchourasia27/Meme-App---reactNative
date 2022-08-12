@@ -38,7 +38,8 @@
 #### Screenshots
 
 <Span>
-<img align="left" alt="screenshot" width="200" src='https://raw.githubusercontent.com/amolchourasia27/Meme-App---reactNative/main/readmeImageAssets/ScreeShot1.jpg'>
+
+<img align="left" alt="screenshot" width="200" src='https://github.com/amolchourasia27/Meme-App---reactNative/blob/main/readmeImageAssets/ezgif.com-gif-maker%20(1).gif?raw=true'>
 
 <img align="right" alt="screenshot" width="200" src='https://raw.githubusercontent.com/amolchourasia27/Meme-App---reactNative/main/readmeImageAssets/ScreeShot2.jpg'>
 </Spam>
