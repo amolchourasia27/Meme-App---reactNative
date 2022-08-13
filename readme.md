@@ -23,7 +23,7 @@
 
 ### Download apk
 
-[APK Download](https://drive.google.com/file/d/1OuEOJ99x6C9gqaf6tTowS695WWIvlCZL/view?usp=drivesdk) **Google drive link**
+[APK Download](https://drive.google.com/file/d/1lSHTDxBw_B06O8LJmL0olepxp72VByW5/view?usp=sharing) **Google drive link**
 
 ### Upcoming Features
 
