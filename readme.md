@@ -35,6 +35,10 @@
 
 - Download a meme
 
+#### Updates
+
+- Random meme with unique id and ratings  
+
 #### Screenshots
 
 <Span>
