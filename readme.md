@@ -39,6 +39,12 @@
 
 - Random meme with unique id and ratings  
 
+- Aces to next and previous memes using meme number
+
+- Unique index for every meme
+
+![updat1.1]()
+
 #### Screenshots
 
 <Span>
