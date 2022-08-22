@@ -51,12 +51,8 @@
 
 #### Screenshots
 
-<Span>
 <img align="left" alt="screenshot" width="200" src='https://github.com/amolchourasia27/Meme-App---reactNative/blob/main/readmeImageAssets/ss1.jpg?raw=true'>
 <img align="right" alt="screenshot" width="200" src='https://github.com/amolchourasia27/Meme-App---reactNative/blob/main/readmeImageAssets/ss2.jpg?raw=true'>
- </Spam>
- ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-<Span>
+
 <img align="left" alt="screenshot" width="200" src='https://github.com/amolchourasia27/Meme-App---reactNative/blob/main/readmeImageAssets/ss3.jpg?raw=true'>
 <img align="right" alt="screenshot" width="200" src='https://github.com/amolchourasia27/Meme-App---reactNative/blob/main/readmeImageAssets/ss4.jpg?raw=true'>
- </Spam>
