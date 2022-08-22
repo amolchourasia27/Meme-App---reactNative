@@ -29,11 +29,20 @@ const MyStack = () => {
           options={{
             title: 'RandomMemes',
             headerStyle: {
-              backgroundColor: '#19b2ff',
+              backgroundColor: '#005480',
             },
           }}
         />
-        <Stack.Screen name="AllMemes" component={AllMemesScreens} />
+        <Stack.Screen
+          name="AllMemes"
+          component={AllMemesScreens}
+          options={{
+            title: 'All Memes',
+            headerStyle: {
+              backgroundColor: '#005480',
+            },
+          }}
+        />
         <Stack.Screen name="MemesByIndex" component={MemesByIndexScreen} />
       </Stack.Navigator>
     </NavigationContainer>

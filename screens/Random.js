@@ -81,23 +81,23 @@ const App = () => {
   const Buttons = props => {
     return (
       <View style={styles.buttonBox}>
-        <TouchableOpacity
+        {/* <TouchableOpacity
           style={[styles.countPButton, styles.elevation]}
           onPress={() => prevImageByIndex()}>
           <Text style={styles.IButtonText}>Previous</Text>
           <Text style={styles.IButtonText}>{count - 1}</Text>
-        </TouchableOpacity>
+        </TouchableOpacity> */}
         <TouchableOpacity
           style={[styles.randomButton, styles.elevation]}
           onPress={() => getImage()}>
           <Text style={styles.buttonText}>New Meme</Text>
         </TouchableOpacity>
-        <TouchableOpacity
+        {/* <TouchableOpacity
           style={[styles.countNButton, styles.elevation]}
           onPress={() => nextImageByIndex()}>
           <Text style={styles.IButtonText}>Next</Text>
           <Text style={styles.IButtonText}>{count + 1}</Text>
-        </TouchableOpacity>
+        </TouchableOpacity> */}
       </View>
     );
   };
@@ -121,7 +121,7 @@ const styles = StyleSheet.create({
   bodyWrapper: {
     width: '100%',
     height: '100%',
-    backgroundColor: '#19b2ff',
+    backgroundColor: '#005480',
     flexDirection: 'column',
   },
   headingText: {
@@ -131,24 +131,24 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
   },
   numText: {
-    color: '#07354c',
+    color: 'black',
     fontSize: 25,
     flex: 2,
   },
   scrollText: {
-    color: '#07354c',
+    color: 'black',
     fontSize: 10,
     flex: 2,
   },
   ratingsText: {
     alignSelf: 'center',
-    color: '#ffd819',
+    color: 'black',
     fontSize: 30,
     paddingBottom: 90,
     marginBottom: 0.6,
   },
   rate: {
-    color: '#ff198c',
+    color: 'black',
   },
   buttonBox: {
     flexDirection: 'row',
@@ -160,8 +160,9 @@ const styles = StyleSheet.create({
   randomButton: {
     alignSelf: 'center',
     position: 'relative',
-    backgroundColor: '#ff198c',
+    backgroundColor: '#0087cc',
     borderRadius: 10,
+    borderWidth: 3,
     height: 60,
     width: 170,
   },
@@ -197,7 +198,7 @@ const styles = StyleSheet.create({
     elevation: 5,
   },
   buttonText: {
-    color: '#ffd800',
+    color: 'black',
     alignSelf: 'center',
     marginTop: 18,
     fontWeight: 'bold',

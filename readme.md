@@ -39,9 +39,15 @@
 
 - Random meme with unique id and ratings  
 
-- Aces to next and previous memes using meme number
+- Home Screen to navigate in different Screens 
+
+- Multiple Screens in App
+
+- Users can get all memes in one request 
 
 - Unique index for every meme
+
+- UI update.
 
 #### Screenshots
 
@@ -49,3 +55,4 @@
 <img align="left" alt="screenshot" width="200" src='https://github.com/amolchourasia27/Meme-App---reactNative/blob/main/readmeImageAssets/ezgif.com-gif-maker%20(1).gif?raw=true'>
 <img align="right" alt="screenshot" width="200" src='https://raw.githubusercontent.com/amolchourasia27/Meme-App---reactNative/main/readmeImageAssets/U1.2screeShot.jpg'>
  </Spam>
+
