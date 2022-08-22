@@ -1,5 +1,6 @@
 # Tasks
-
+- [ ] Make logo a touchable component
+- [ ] Try using a bright black color for text and ui
 - [ ] Make a consistent UI
 - [ ] Add a logo
 - [x] Make meme by Index(enter num get meme)
