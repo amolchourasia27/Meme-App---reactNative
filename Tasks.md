@@ -1,5 +1,7 @@
 # Tasks
 
+- [ ] Make meme by Index(enter num get meme)
+- [ ] Use text box to enter
 - [X] Make something for all posts (flastlists)
 - [X] render images in small components 
 - [x] Break project in components(Not worth it)
