@@ -2,6 +2,9 @@
 
 - [ ] Make a consistent UI
 - [ ] Add a logo
+- [ ] GitHub Image bot
+- [ ] Post request in API
+- [ ] Image repo auto Update
 - [x] Make meme by Index(enter num get meme)
 - [x] Use text box to enter
 - [X] Make something for all posts (flastlists)
