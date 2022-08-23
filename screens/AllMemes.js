@@ -7,6 +7,7 @@ import {
   StyleSheet,
   ScrollView,
   ActivityIndicator,
+  TouchableOpacity,
 } from 'react-native';
 import {FlatList} from 'react-native-gesture-handler';
 
@@ -64,13 +65,20 @@ const AllMemes = () => {
         data={Data2}
         renderItem={item => RenderItem(item)}
         keyExtractor={item => item._id}
+        horizontal={false}
+        initialNumToRender={5}
       />
-      <Button
+      {/* <Button
         onPress={allMemesFun}
         title="Show all Memes"
         color="#0087cc"
         accessibilityLabel="Learn more about this purple button"
-      />
+      /> */}
+      <TouchableOpacity
+        style={[styles.button, styles.elevation]}
+        onPress={allMemesFun}>
+        <Text style={styles.buttonText}> Show all Memes</Text>
+      </TouchableOpacity>
     </View>
   );
 };
@@ -80,6 +88,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignContent: 'center',
     backgroundColor: '#005480',
+    zIndex: 1,
   },
   BodWrapper: {
     backgroundColor: '#005480',
@@ -121,6 +130,35 @@ const styles = StyleSheet.create({
   image: {
     padding: '40%',
     resizeMode: 'contain',
+  },
+  button: {
+    alignSelf: 'center',
+    position: 'relative',
+    backgroundColor: '#0087cc',
+    borderRadius: 10,
+    borderWidth: 3,
+    height: 60,
+    width: 170,
+    marginBottom: '15%',
+    marginTop: '8%',
+  },
+  elevation: {
+    shadowColor: '#000',
+    shadowOffset: {
+      width: 0,
+      height: 2,
+    },
+    shadowOpacity: 0.25,
+    shadowRadius: 3.84,
+
+    elevation: 5,
+  },
+  buttonText: {
+    color: 'black',
+    alignSelf: 'center',
+    marginTop: 18,
+    fontWeight: 'bold',
+    fontSize: 18,
   },
 });
 export default AllMemes;

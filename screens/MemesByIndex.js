@@ -2,11 +2,12 @@ import React, {useState} from 'react';
 import {
   View,
   Image,
-  Button,
   TextInput,
   StyleSheet,
   ActivityIndicator,
   ToastAndroid,
+  TouchableOpacity,
+  Text,
 } from 'react-native';
 
 const MemesByIndex = () => {
@@ -55,12 +56,11 @@ const MemesByIndex = () => {
             />
           ) : null}
         </View>
-        <Button
-          onPress={getImageByIndex}
-          title="Show a Memes"
-          color="#0087cc"
-          accessibilityLabel="get meme from input value"
-        />
+        <TouchableOpacity
+          style={[styles.button, styles.elevation]}
+          onPress={getImageByIndex}>
+          <Text style={styles.buttonText}> Show meme {number}</Text>
+        </TouchableOpacity>
       </View>
     </View>
   );
@@ -87,6 +87,8 @@ const styles = StyleSheet.create({
     backgroundColor: '#0087cc',
     borderRadius: 10,
     borderWidth: 5,
+    marginTop: '10%',
+    zIndex: 1,
     textAlign: 'center',
     width: '50%',
     alignSelf: 'center',
@@ -109,6 +111,35 @@ const styles = StyleSheet.create({
     paddingHorizontal: 150,
     position: 'absolute',
     marginTop: -16,
+  },
+  button: {
+    alignSelf: 'center',
+    position: 'relative',
+    backgroundColor: '#0087cc',
+    zIndex: 1,
+    borderRadius: 10,
+    borderWidth: 3,
+    height: 60,
+    width: 170,
+    marginBottom: '10%',
+  },
+  elevation: {
+    shadowColor: '#000',
+    shadowOffset: {
+      width: 0,
+      height: 2,
+    },
+    shadowOpacity: 0.25,
+    shadowRadius: 3.84,
+
+    elevation: 2,
+  },
+  buttonText: {
+    color: 'black',
+    alignSelf: 'center',
+    marginTop: 16,
+    fontWeight: 'bold',
+    fontSize: 16,
   },
 });
 

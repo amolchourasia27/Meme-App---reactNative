@@ -2,9 +2,9 @@
 
 - [ ] Post request in API
 - [ ] Image repo auto Update
-- [ ] Make logo a touchable component
 - [ ] Try using a bright black color for text and ui
-- [ ] Make a consistent UI
+- [ ] Make a consistent UI(almost 23/08/22)
+- [X] Make logo a touchable component(No use case 23/08/22)
 - [x] GitHub Image bot(Not working 23/8/2022)
 - [X] Toast response on wrong input
 - [x] Must add a is loading useState
