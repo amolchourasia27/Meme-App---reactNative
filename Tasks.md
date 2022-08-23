@@ -1,5 +1,9 @@
 # Tasks
 
+- [ ] Toast response on wrong input 
+- [ ] Must add a is loading useState
+- [ ] Make logo a touchable component
+- [ ] Try using a bright black color for text and ui
 - [ ] Make a consistent UI
 - [ ] Add a logo
 - [ ] GitHub Image bot
