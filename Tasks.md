@@ -1,14 +1,14 @@
 # Tasks
 
-- [ ] Toast response on wrong input 
-- [ ] Must add a is loading useState
+- [ ] Post request in API
+- [ ] Image repo auto Update
 - [ ] Make logo a touchable component
 - [ ] Try using a bright black color for text and ui
 - [ ] Make a consistent UI
-- [ ] Add a logo
-- [ ] GitHub Image bot
-- [ ] Post request in API
-- [ ] Image repo auto Update
+- [x] GitHub Image bot(Not working 23/8/2022)
+- [X] Toast response on wrong input
+- [x] Must add a is loading useState
+- [x] Add a logo
 - [x] Make meme by Index(enter num get meme)
 - [x] Use text box to enter
 - [X] Make something for all posts (flastlists)

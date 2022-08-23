@@ -5,6 +5,7 @@ import {
   View,
   Image,
   ScrollView,
+  ActivityIndicator,
 } from 'react-native';
 import React, {useState} from 'react';
 
@@ -14,20 +15,21 @@ const App = () => {
   );
   const [memeRating, setMemeRating] = useState(1);
   const [memeIndex, setMemeIndex] = useState();
-  const [isLoading, setIsLoading] = useState(true);
+  const [isLoading, setIsLoading] = useState(false);
   const [count, setCount] = useState(memeIndex);
 
   const getImage = async () => {
+    setIsLoading(true);
     const url = 'https://custom-meme-api.herokuapp.com/posts';
     const res = await fetch(url);
     const data = await res.json();
     const memeData = data.picture;
     setMemeImage(memeData);
-    setIsLoading(true);
     const memeIndexData = data.index;
     const memeRatingData = data.ratings;
     setMemeIndex(memeIndexData);
     setMemeRating(memeRatingData);
+    setIsLoading(false);
   };
   const prevImageByIndex = async () => {
     const memeNum = memeIndex - 1;
@@ -73,6 +75,13 @@ const App = () => {
           Meme Number <Text>{memeIndex}</Text>
         </Text>
         <Text style={styles.scrollText}>Scroll Down for more</Text>
+        {isLoading ? (
+          <ActivityIndicator
+            size="large"
+            color="white"
+            style={styles.indicator}
+          />
+        ) : null}
         <Image source={{uri: memeImage}} style={styles.meme} />
       </ScrollView>
     );

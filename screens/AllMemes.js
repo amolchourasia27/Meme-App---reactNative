@@ -1,15 +1,26 @@
 import React, {useState} from 'react';
-import {View, Text, Button, Image, StyleSheet, ScrollView} from 'react-native';
+import {
+  View,
+  Text,
+  Button,
+  Image,
+  StyleSheet,
+  ScrollView,
+  ActivityIndicator,
+} from 'react-native';
 import {FlatList} from 'react-native-gesture-handler';
 
 const AllMemes = () => {
   const [Data2, setData] = useState();
+  const [isLoading, setisLoading] = useState(false);
   const allMemesFun = async () => {
+    setisLoading(true);
     const url = 'https://custom-meme-api.herokuapp.com/allposts';
     const res = await fetch(url);
     const DATA = await res.json();
     const Data2 = DATA;
     setData(Data2);
+    setisLoading(false);
   };
   const Item = props => (
     <ScrollView style={styles.BodWrapper}>
@@ -42,6 +53,13 @@ const AllMemes = () => {
   const RenderItem = ({item}) => <Item data={item} />;
   return (
     <View style={styles.mainBody}>
+      {isLoading ? (
+        <ActivityIndicator
+          size="large"
+          color="white"
+          style={styles.indicator}
+        />
+      ) : null}
       <FlatList
         data={Data2}
         renderItem={item => RenderItem(item)}
@@ -73,6 +91,11 @@ const styles = StyleSheet.create({
     borderRightWidth: 10,
     height: 'auto',
     width: 'auto',
+  },
+  indicator: {
+    justifyContent: 'center',
+    zIndex: 1,
+    flex: 6,
   },
   contentBox: {
     backgroundColor: '#005480',

@@ -1,22 +1,38 @@
 import React, {useState} from 'react';
-import {View, Image, Button, TextInput, StyleSheet} from 'react-native';
+import {
+  View,
+  Image,
+  Button,
+  TextInput,
+  StyleSheet,
+  ActivityIndicator,
+  ToastAndroid,
+} from 'react-native';
 
 const MemesByIndex = () => {
   const [index, setIndex] = useState('0');
+  const [isLoading, setisLoading] = useState(false);
   const [meme, setMeme] = useState();
   const [text, onChangeText] = useState('null');
   const [number, onChangeNumber] = useState(null);
   const getImageByIndex = async () => {
     const urlNum = number;
-    if (urlNum < 300 && urlNum >= 0) {
+    setisLoading(true);
+    if (urlNum && urlNum < 300 && urlNum >= 0) {
       const url = 'https://custom-meme-api.herokuapp.com/' + urlNum;
       const res = await fetch(url);
       const data = await res.json();
       const memeData = data.picture;
       setMeme(memeData);
+      setisLoading(false);
+    } else {
+      showToast();
     }
   };
-
+  const showToast = () => {
+    ToastAndroid.show('Bad Input enter a value below 300 !', ToastAndroid.LONG);
+    setisLoading(false);
+  };
   return (
     <View style={styles.mainBox}>
       <View style={styles.bodyWrapper}>
@@ -31,6 +47,13 @@ const MemesByIndex = () => {
         </View>
         <View style={styles.imageBox}>
           <Image source={{uri: meme}} style={styles.image} />
+          {isLoading ? (
+            <ActivityIndicator
+              size="large"
+              color="white"
+              style={styles.indicator}
+            />
+          ) : null}
         </View>
         <Button
           onPress={getImageByIndex}
@@ -76,6 +99,16 @@ const styles = StyleSheet.create({
   },
   imageBox: {
     borderWidth: 10,
+    flexDirection: 'row',
+  },
+  indicator: {
+    justifyContent: 'center',
+    alignSelf: 'center',
+    zIndex: 1,
+    paddingBottom: 30,
+    paddingHorizontal: 150,
+    position: 'absolute',
+    marginTop: -16,
   },
 });
 
