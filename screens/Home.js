@@ -1,13 +1,39 @@
-/* eslint-disable prettier/prettier */
-import React from 'react';
+import React, {useEffect, useRef} from 'react';
 import {View, Text, TouchableOpacity, StyleSheet} from 'react-native';
+import {Animated} from 'react-native';
+
 const Home = ({navigation}) => {
+  useEffect(() => {
+    fadeIn();
+  }, []);
+  const fadeAnim = useRef(new Animated.Value(0)).current;
+  const Ring = ({delay}) => {
+    return <Animated.View style={[styles.ring, {opacity: fadeAnim}]} />;
+  };
+  const fadeIn = () => {
+    Animated.timing(fadeAnim, {
+      toValue: 1,
+      useNativeDriver: true,
+      duration: 2500,
+    }).start();
+  };
+  const fadeOut = () => {
+    // Will change fadeAnim value to 0 in 3 seconds
+    Animated.timing(fadeAnim, {
+      toValue: 0,
+      useNativeDriver: true,
+      duration: 1000,
+    }).start();
+  };
   return (
     <View style={styles.bodyWrapper}>
-      <View style={styles.ImageBox}>
+      <TouchableOpacity style={styles.ImageBox} onPress={fadeOut}>
         <Text style={styles.ImageBoxText}>Procrastinator</Text>
-        <Text style={styles.ImageBoxText2}>Memes</Text>
-      </View>
+        <TouchableOpacity>
+          <Text style={styles.ImageBoxText2}>Memes</Text>
+        </TouchableOpacity>
+        <Ring />
+      </TouchableOpacity>
 
       <View style={styles.ButtonBox}>
         <TouchableOpacity
@@ -41,8 +67,16 @@ const styles = StyleSheet.create({
     height: 220,
     width: 220,
     backgroundColor: '#0087cc',
-    borderRadius: 100,
+    borderRadius: 220 / 2,
     alignSelf: 'center',
+  },
+  ring: {
+    position: 'absolute',
+    width: 220,
+    height: 220,
+    borderRadius: 220 / 2,
+    alignSelf: 'center',
+    borderColor: '#001b28',
     borderWidth: 5,
   },
   ImageBoxText: {

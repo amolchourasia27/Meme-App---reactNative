@@ -2,7 +2,6 @@ import React, {useState} from 'react';
 import {
   View,
   Text,
-  Button,
   Image,
   StyleSheet,
   ScrollView,
@@ -13,15 +12,15 @@ import {FlatList} from 'react-native-gesture-handler';
 
 const AllMemes = () => {
   const [Data2, setData] = useState();
-  const [isLoading, setisLoading] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
   const allMemesFun = async () => {
-    setisLoading(true);
+    setIsLoading(true);
     const url = 'https://custom-meme-api.herokuapp.com/allposts';
     const res = await fetch(url);
     const DATA = await res.json();
     const Data2 = DATA;
     setData(Data2);
-    setisLoading(false);
+    setIsLoading(false);
   };
   const Item = props => (
     <ScrollView style={styles.BodWrapper}>
