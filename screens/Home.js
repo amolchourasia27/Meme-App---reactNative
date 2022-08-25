@@ -5,7 +5,7 @@ import {Animated} from 'react-native';
 const Home = ({navigation}) => {
   useEffect(() => {
     fadeIn();
-  }, []);
+  });
   const fadeAnim = useRef(new Animated.Value(0)).current;
   const Ring = ({delay}) => {
     return <Animated.View style={[styles.ring, {opacity: fadeAnim}]} />;
