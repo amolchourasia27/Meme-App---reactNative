@@ -75,7 +75,7 @@ const styles = StyleSheet.create({
     width: '100%',
   },
   bodyWrapper: {
-    backgroundColor: '#005480',
+    backgroundColor: 'black',
     height: '100%',
     flexDirection: 'column',
     justifyContent: 'space-around',
@@ -84,7 +84,8 @@ const styles = StyleSheet.create({
     padding: '1%',
   },
   inputBox: {
-    backgroundColor: '#0087cc',
+    backgroundColor: 'black',
+    borderColor: '#0087cc',
     borderRadius: 10,
     borderWidth: 5,
     marginTop: '10%',
@@ -115,7 +116,8 @@ const styles = StyleSheet.create({
   button: {
     alignSelf: 'center',
     position: 'relative',
-    backgroundColor: '#0087cc',
+    backgroundColor: 'black',
+    borderColor: '#0087cc',
     zIndex: 1,
     borderRadius: 10,
     borderWidth: 3,
@@ -135,7 +137,7 @@ const styles = StyleSheet.create({
     elevation: 2,
   },
   buttonText: {
-    color: 'black',
+    color: 'white',
     alignSelf: 'center',
     marginTop: 16,
     fontWeight: 'bold',

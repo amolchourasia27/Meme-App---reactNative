@@ -130,7 +130,7 @@ const styles = StyleSheet.create({
   bodyWrapper: {
     width: '100%',
     height: '100%',
-    backgroundColor: '#005480',
+    backgroundColor: 'black',
     flexDirection: 'column',
   },
   headingText: {
@@ -140,24 +140,24 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
   },
   numText: {
-    color: 'black',
+    color: '#0087cc',
     fontSize: 25,
     flex: 2,
   },
   scrollText: {
-    color: 'black',
+    color: '#0087cc',
     fontSize: 10,
     flex: 2,
   },
   ratingsText: {
     alignSelf: 'center',
-    color: 'black',
+    color: 'white',
     fontSize: 30,
     paddingBottom: 90,
     marginBottom: 0.6,
   },
   rate: {
-    color: 'black',
+    color: '#0087cc',
   },
   buttonBox: {
     flexDirection: 'row',
@@ -169,7 +169,8 @@ const styles = StyleSheet.create({
   randomButton: {
     alignSelf: 'center',
     position: 'relative',
-    backgroundColor: '#0087cc',
+    backgroundColor: 'black',
+    borderColor: '#0087cc',
     borderRadius: 10,
     borderWidth: 3,
     height: 60,
@@ -207,7 +208,7 @@ const styles = StyleSheet.create({
     elevation: 5,
   },
   buttonText: {
-    color: 'black',
+    color: 'white',
     alignSelf: 'center',
     marginTop: 18,
     fontWeight: 'bold',
@@ -225,7 +226,7 @@ const styles = StyleSheet.create({
     alignContent: 'center',
     overflow: 'scroll',
 
-    borderColor: '#07354c',
+    borderColor: 'black',
     borderBottomWidth: 2,
     borderRadius: 10,
     height: 'auto',

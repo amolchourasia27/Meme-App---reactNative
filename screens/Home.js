@@ -1,21 +1,27 @@
-import React, {useEffect, useRef} from 'react';
+import React, {useEffect, useRef, useState} from 'react';
 import {View, Text, TouchableOpacity, StyleSheet} from 'react-native';
 import {Animated} from 'react-native';
 
 const Home = ({navigation}) => {
+  const [done, setIsDone] = useState(false);
   useEffect(() => {
     fadeIn();
-  });
+  }, [done]);
   const fadeAnim = useRef(new Animated.Value(0)).current;
   const Ring = ({delay}) => {
     return <Animated.View style={[styles.ring, {opacity: fadeAnim}]} />;
+  };
+  const handelAnimation = () => {
+    fadeOut();
+    setIsDone(false);
   };
   const fadeIn = () => {
     Animated.timing(fadeAnim, {
       toValue: 1,
       useNativeDriver: true,
-      duration: 2500,
+      duration: 1000,
     }).start();
+    setIsDone(true);
   };
   const fadeOut = () => {
     // Will change fadeAnim value to 0 in 3 seconds
@@ -27,7 +33,7 @@ const Home = ({navigation}) => {
   };
   return (
     <View style={styles.bodyWrapper}>
-      <TouchableOpacity style={styles.ImageBox} onPress={fadeOut}>
+      <TouchableOpacity style={styles.ImageBox} onPress={handelAnimation}>
         <Text style={styles.ImageBoxText}>Procrastinator</Text>
         <TouchableOpacity>
           <Text style={styles.ImageBoxText2}>Memes</Text>
@@ -61,12 +67,12 @@ const styles = StyleSheet.create({
   bodyWrapper: {
     flex: 1,
     flexDirection: 'column',
-    backgroundColor: '#005480',
+    backgroundColor: 'black',
   },
   ImageBox: {
     height: 220,
     width: 220,
-    backgroundColor: '#0087cc',
+    backgroundColor: 'black',
     borderRadius: 220 / 2,
     alignSelf: 'center',
   },
@@ -76,15 +82,15 @@ const styles = StyleSheet.create({
     height: 220,
     borderRadius: 220 / 2,
     alignSelf: 'center',
-    borderColor: '#001b28',
+    borderColor: '#0087cc',
     borderWidth: 5,
   },
   ImageBoxText: {
     alignSelf: 'center',
     justifyContent: 'center',
-    borderBottomColor: 'black',
+    borderBottomColor: '#0087cc',
     borderBottomWidth: 2,
-    color: 'black',
+    color: 'white',
     fontWeight: 'bold',
     paddingHorizontal: '10%',
     paddingVertical: '5%',
@@ -94,7 +100,7 @@ const styles = StyleSheet.create({
   ImageBoxText2: {
     alignSelf: 'center',
     justifyContent: 'center',
-    color: 'black',
+    color: 'white',
     fontWeight: 'bold',
     paddingHorizontal: '10%',
     paddingTop: 2,
@@ -105,18 +111,19 @@ const styles = StyleSheet.create({
     justifyContent: 'space-evenly',
     alignContent: 'center',
     paddingVertical: '50%',
-    backgroundColor: '#005480',
+    backgroundColor: 'black',
   },
   NavButtons: {
-    backgroundColor: '#0087cc',
+    backgroundColor: 'black',
     // paddingVertical: 30,
+    borderColor: '#0087cc',
     height: 60,
     width: '30%',
     borderRadius: 10,
     borderWidth: 3,
   },
   ButtonText: {
-    color: 'black',
+    color: 'white',
     fontSize: 12,
     fontWeight: 'bold',
     alignItems: 'center',

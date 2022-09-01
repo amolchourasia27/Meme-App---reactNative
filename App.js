@@ -2,7 +2,7 @@
 import * as React from 'react';
 import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
-import {Image} from 'react-native';
+import {Image, Text} from 'react-native';
 
 import HomeScreen from './screens/Home';
 import RandomScreen from './screens/Random';
@@ -14,7 +14,11 @@ const Stack = createNativeStackNavigator();
 const MyStack = () => {
   return (
     <NavigationContainer>
-      <Stack.Navigator>
+      <Stack.Navigator
+        screenOptions={{
+          headerShown: true,
+          headerBackTitleVisible: false,
+        }}>
         <Stack.Screen
           name="Home"
           component={HomeScreen}
@@ -25,9 +29,12 @@ const MyStack = () => {
                 source={require('./assets/logo.png')}
               />
             ),
-            title: 'Welcome',
+            headerLeft: () => (
+              <Text style={{fontSize: 24, color: 'white'}}>Welcome</Text>
+            ),
+            headerShadowVisible: 'false',
             headerStyle: {
-              backgroundColor: '#005480',
+              backgroundColor: 'black',
             },
           }}
         />
@@ -41,9 +48,12 @@ const MyStack = () => {
                 source={require('./assets/logo.png')}
               />
             ),
-            title: 'Random Memes',
+            headerLeft: () => (
+              <Text style={{fontSize: 24, color: 'white'}}>Random Memes</Text>
+            ),
+            headerShadowVisible: 'false',
             headerStyle: {
-              backgroundColor: '#005480',
+              backgroundColor: 'black',
             },
           }}
         />
@@ -57,9 +67,12 @@ const MyStack = () => {
                 source={require('./assets/logo.png')}
               />
             ),
-            title: 'All Memes',
+            headerLeft: () => (
+              <Text style={{fontSize: 24, color: 'white'}}>All Memes</Text>
+            ),
+            headerShadowVisible: 'false',
             headerStyle: {
-              backgroundColor: '#005480',
+              backgroundColor: 'black',
             },
           }}
         />
@@ -73,9 +86,12 @@ const MyStack = () => {
                 source={require('./assets/logo.png')}
               />
             ),
-            title: 'Get a Meme',
+            headerLeft: () => (
+              <Text style={{fontSize: 24, color: 'white'}}>Get a Meme</Text>
+            ),
+            headerShadowVisible: 'false',
             headerStyle: {
-              backgroundColor: '#005480',
+              backgroundColor: 'black',
             },
           }}
         />
