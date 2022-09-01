@@ -22,8 +22,8 @@
 - Start terminal and write command `react-native run-android` and run app on your plugged phone/Android Emulator
 
 ### Download apk
-- [APK Download](https://github.com/amolchourasia27/Meme-App---reactNative/raw/main/apks/Meme-App.apk) **Github link**
-- [APK Download](https://drive.google.com/file/d/1vrYdfYZx66b7ETbW3mqr5Um_XiY5305Y/view?usp=sharing) **Google drive link**
+1. [APK Download V1](https://github.com/amolchourasia27/Meme-App---reactNative/raw/main/apks/Meme-App.apk) **Github link**
+2. [APK Download V2](https://github.com/amolchourasia27/Meme-App---reactNative/raw/main/apks/Meme-App-v2.apk) **Github link(latest)**
 
 ### Upcoming Features
 
