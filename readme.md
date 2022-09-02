@@ -50,11 +50,6 @@
 - UI update.
 
 #### Screenshots
+![ss1](https://github.com/amolchourasia27/Meme-App---reactNative/blob/main/readmeImageAssets/Untitled%20design.png?raw=true)
+![sss2](https://github.com/amolchourasia27/Meme-App---reactNative/blob/main/readmeImageAssets/Untitled%20design%20(1).png?raw=true)
 
-<img align="left" alt="screenshot" width="200" src='https://github.com/amolchourasia27/Meme-App---reactNative/blob/main/readmeImageAssets/ss1.jpg?raw=true'>
-<img align="right" alt="screenshot" width="200" src='https://github.com/amolchourasia27/Meme-App---reactNative/blob/main/readmeImageAssets/ss2.jpg?raw=true'>
-
-<img align="left" alt="screenshot" width="200" src='https://github.com/amolchourasia27/Meme-App---reactNative/blob/main/readmeImageAssets/ss3.jpg?raw=true'>
-<img align="right" alt="screenshot" width="200" src='https://github.com/amolchourasia27/Meme-App---reactNative/blob/main/readmeImageAssets/ss4.jpg?raw=true'>
-
-<img align="left" alt="screenshot" width="200" src='https://github.com/amolchourasia27/Meme-App---reactNative/blob/main/readmeImageAssets/ezgif.com-gif-maker.gif?raw=true'>
